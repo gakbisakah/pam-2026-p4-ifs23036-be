@@ -1,0 +1,14 @@
+ktor:
+    deployment:
+        port: 8080
+        host: 0.0.0.0      # 🔹 penting agar bisa diakses dari emulator/device
+    application:
+        modules:
+            - org.delcom.ApplicationKt.module
+
+database:
+    host: "localhost"      # backend tetap connect ke PostgreSQL lokal
+    port: 5432
+    name: "latihan_keuangan"
+    user: "postgres"
+    password: "Sayabag"
